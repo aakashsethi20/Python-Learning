@@ -1,6 +1,7 @@
 import media
 import webbrowser
 import sys
+import fresh_tomatoes
 
 film_300 = media.Movie(
 	# Title
@@ -40,5 +41,12 @@ pulp_fiction = media.Movie(
 	"https://www.youtube.com/watch?v=s7EdQ4FqbhY"
 	)
 
-pulp_fiction.show_trailer()
+# print (pulp_fiction.trailer)
+# print (catch_me.trailer)
+# print (film_300.trailer)
+
+movies = [film_300, catch_me, pulp_fiction]
+fresh_tomatoes.open_movies_page(movies)
+
+#pulp_fiction.show_trailer()
 #sys.exit("Trailer launched!")
